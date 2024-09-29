@@ -14,3 +14,9 @@ node_modules
 
 # .DS_Store is only for Mac users
 **/.DS_Store
+
+README.md
+
+#In the video "Build the Application" said include this file here to do not modify
+pnpm-lock.yaml
+
