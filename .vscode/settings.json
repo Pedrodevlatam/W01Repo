@@ -1,16 +1,30 @@
 {
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "editor.accessibilitySupport": "off",
+    "editor.inlineSuggest.enabled": true,
+    "grunt.autoDetect": "on",
+    "gulp.autoDetect": "on",
+    "jake.autoDetect": "on",
     "sqltools.connections": [
         {
             "pgOptions": {
                 "ssl": {
-                    "rejectUnauthorized": true
+                    "rejectUnauthorized": false // Cambia a true si necesitas verificar el certificado
                 }
             },
             "previewLimit": 50,
-            "server": "localhost",
+            "server": "dpg-cs0oms68ii6s73cs9to0-a.oregon-postgres.render.com",
             "driver": "PostgreSQL",
             "name": "render.com",
-            "connectString": "postgresql://usercse340pmver2:BhF4ZncKsVXmZ8JB0I07icYgdjnrxW1I@dpg-cs0oms68ii6s73cs9to0-a.oregon-postgres.render.com/cse340_database_yxta"
+            "database": "cse340_database_yxta",
+            "username": "usercse340pmver2",
+            "password": "BhF4ZncKsVXmZ8JB0I07icYgdjnrxW1I",
+            "port": 5432
         }
     ]
 }
+
+
