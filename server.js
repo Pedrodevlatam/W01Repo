@@ -7,7 +7,8 @@
  *************************/
 const express = require("express")
 const expressLayouts = require("express-ejs-layouts")
-const env = require("dotenv").config()
+/*const env = require("dotenv").config()*/
+require("dotenv").config(); // Cargar dotenv sin asignación
 const app = express()
 const static = require("./routes/static")
 const baseController = require("./controllers/baseController")
@@ -64,8 +65,10 @@ app.use(async (err, req, res, next) => {
  * Local Server Information
  * Values from .env (environment) file
  *************************/
-const port = process.env.PORT
-const host = process.env.HOST
+const port = process.env.PORT || 5500; // Valor por defecto
+const host = process.env.HOST || 'localhost'; // Valor por defecto
+console.log(`Host: ${host}, Port: ${port}`);
+
 
 /* ***********************
  * Log statement to confirm server operation
